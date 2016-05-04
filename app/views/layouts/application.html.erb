@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xiaobai</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="stylesheets/first.css"/>
+  <link rel="stylesheet" href="stylesheets/bootstrap.css" />
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script language="JavaScript" src="js/bootstrap.min.js"></script>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container-fluid">
+  <%= render "common/navbar" %>
+  <%= notice_message %>
+  <%= yield %>
+</div>
+<%= render "common/footer" %>
+</body>
+</html>
